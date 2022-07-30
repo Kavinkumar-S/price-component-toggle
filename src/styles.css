@@ -1,0 +1,150 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.container > h3 {
+  color: #73758c;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.card-container {
+  display: flex;
+  background: #fff;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+  align-self: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card > h5 {
+  font-size: 20px;
+}
+
+.card > button {
+  color: #fff;
+  background: #9499eb;
+  outline: none;
+  border: 1px solid #9499eb;
+  padding: 8px 20px;
+  width: 90%;
+  border-radius: 6px;
+  text-transform: uppecase;
+}
+.card > h2 {
+  color: #4e5163;
+  font-size: 55px;
+  font-weight: 600;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card > h2 > span {
+  color: #4e5163;
+  font-size: 25px;
+  padding-right: 5px;
+}
+
+.card > ul > li {
+  border-top: 4px solid #f6f6f6;
+  margin: 10px auto;
+  font-size: 19px;
+  padding: 15px 0px;
+}
+
+.card:nth-child(2) {
+  background: #9fa2f1;
+  color: #fff;
+  height: 450px;
+}
+.card:nth-child(2) > ul > li {
+  border-top: 4px solid #ececec12;
+}
+.card:nth-child(2) > button {
+  color: #9499eb;
+  background: #fff;
+  border: 1px solid #fff;
+}
+.card:nth-child(2) > h2 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:nth-child(2) > h2 > span {
+  color: #fff;
+}
+.toggle-btn-container {
+  margin: 20px 0px;
+  text-align: center;
+}
+.switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #9ea1f0;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.switch-slider:before {
+  position: absolute;
+  content: " ";
+  left: 5px;
+  top: 3px;
+  width: 25px;
+  height: 25px;
+  background: #ffd;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.switch input:checked + .switch-slider {
+  background: #4e5163;
+}
+
+.switch input:checked + .switch-slider:before {
+  transform: translateX(26px);
+}
+
